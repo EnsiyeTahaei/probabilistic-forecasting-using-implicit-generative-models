@@ -1,0 +1,19 @@
+#!/bin/bash
+
+python main.py \
+--model_name VAE \
+--dataset_name hepc \
+--mode 2 \
+--condition_size 28 \
+--latent_length 26 \
+--horizon 20 \
+--quantile 1 \
+--sample_size 200 \
+--cell_type GRU \
+--dec_hidden_size 128 \
+--dec_hidden_depth 2 \
+--dec_dropout_rate 0.44 \
+--enc_hidden_size 512 \
+--enc_hidden_depth 3 \
+--enc_dropout_rate 0. \
+--seed 200
